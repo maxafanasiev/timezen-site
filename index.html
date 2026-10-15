@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Timezen — Time tracking for self-hosted SolidTime</title>
-<meta name="description" content="Timezen is a beautiful native iOS time tracker for self-hosted SolidTime servers. Start/stop timer, edit entries, dashboards, dark mode.">
+<meta name="description" content="Timezen is an open-source native iOS time tracker for self-hosted SolidTime servers. Timer, widgets, Live Activity, Siri, dashboards and team reports.">
 <link rel="icon" href="assets/icon.png">
 <style>
   :root{
@@ -33,6 +33,8 @@
   .btn.primary{background:linear-gradient(90deg,var(--brand1),var(--brand2));color:#fff}
   .btn.ghost{background:var(--card);color:var(--text);border:1px solid var(--line)}
   .btn:hover{transform:translateY(-1px)}
+  .beta{margin-top:16px;font-size:14px;color:var(--muted)}
+  .beta a{color:#c3b3ff}
   .phone{justify-self:center;position:relative}
   .phone img{width:270px;border-radius:36px;box-shadow:0 30px 80px rgba(91,75,236,.35);border:1px solid var(--line)}
   .features{padding:50px 0}
@@ -63,20 +65,21 @@
     <div class="links">
       <a href="#features">Features</a>
       <a href="privacy.html">Privacy</a>
-      <a href="mailto:afanasievmaksym2@gmail.com">Support</a>
+      <a href="https://github.com/maxafanasiev/timezen">GitHub</a>
     </div>
   </nav>
 
   <header class="hero">
     <div>
-      <span class="badge">Client for self-hosted SolidTime</span>
+      <span class="badge">Open source · Client for self-hosted SolidTime</span>
       <h1>Track your time,<br><span class="grad">beautifully.</span></h1>
       <p class="sub">Timezen is a native iOS time tracker for your own <strong>self-hosted SolidTime</strong> server.
-        One-tap timer, rich history, dashboards, and dark mode — your data stays on your server.</p>
+        One-tap timer, widgets, Live Activity, dashboards and team reports — your data stays on your server.</p>
       <div class="cta">
-        <a class="btn primary" href="#features">Explore features</a>
-        <a class="btn ghost" href="mailto:afanasievmaksym2@gmail.com">Contact support</a>
+        <a class="btn primary" href="https://apps.apple.com/app/id6786309367">Download on the App Store</a>
+        <a class="btn ghost" href="https://github.com/maxafanasiev/timezen">View on GitHub</a>
       </div>
+      <p class="beta">Want new builds early? <a href="https://testflight.apple.com/join/j7mspwVg">Join the TestFlight beta</a>.</p>
     </div>
     <div class="phone"><img src="assets/shot-timer.png" alt="Timezen timer screen"></div>
   </header>
@@ -85,12 +88,15 @@
     <h2>Everything you need to track time</h2>
     <p class="lead">Fast, focused, and made for people who host their own tools.</p>
     <div class="grid">
-      <div class="card"><div class="ic">⏱️</div><h3>One-tap timer</h3><p>Start and stop with a tap. Add project, task, tags and billable — right from the home screen.</p></div>
-      <div class="card"><div class="ic">✏️</div><h3>Edit anything</h3><p>Adjust description, project, and start / end / duration on any entry. Resume or duplicate with a swipe.</p></div>
-      <div class="card"><div class="ic">📊</div><h3>Dashboards</h3><p>Day, week, month, half-month or custom ranges with per-project color charts and a project filter.</p></div>
-      <div class="card"><div class="ic">🌙</div><h3>Dark &amp; light</h3><p>System, Light or Dark theme — switch anytime in Settings.</p></div>
-      <div class="card"><div class="ic">🏢</div><h3>Multi-organization</h3><p>Switch between the organizations you belong to on your SolidTime server.</p></div>
-      <div class="card"><div class="ic">🔒</div><h3>Private by design</h3><p>Your API token is stored in the iOS Keychain. Timezen talks only to your server — never to us.</p></div>
+      <div class="card"><div class="ic">⏱️</div><h3>One-tap timer</h3><p>Start and stop with a tap. Pick project, task, tags and billable right on the timer screen.</p></div>
+      <div class="card"><div class="ic">✏️</div><h3>Edit anything</h3><p>Change any entry, add past time manually, resume or duplicate with a swipe, search your history.</p></div>
+      <div class="card"><div class="ic">📊</div><h3>Dashboards &amp; reports</h3><p>Day, week, month or custom ranges, per-project charts, team reports with billable amounts, CSV export.</p></div>
+      <div class="card"><div class="ic">📱</div><h3>Widgets &amp; Live Activity</h3><p>Start/stop from the Home Screen widget and watch the running timer in the Dynamic Island.</p></div>
+      <div class="card"><div class="ic">🎙️</div><h3>Siri &amp; Shortcuts</h3><p>“Start timer”, “Stop timer”, “How long today” — by voice or from Shortcuts.</p></div>
+      <div class="card"><div class="ic">🏢</div><h3>Teams &amp; organizations</h3><p>Switch organizations; project and task creation follows your role on the server.</p></div>
+      <div class="card"><div class="ic">📶</div><h3>Works offline</h3><p>Keeps the last synced data on the device, so your history is there without a connection.</p></div>
+      <div class="card"><div class="ic">🔒</div><h3>Private by design</h3><p>Token in the iOS Keychain, optional Face ID lock. Timezen talks only to your server — never to us.</p></div>
+      <div class="card"><div class="ic">💻</div><h3>Open source</h3><p>MIT-licensed on <a href="https://github.com/maxafanasiev/timezen" style="color:#c3b3ff">GitHub</a>. Issues and pull requests welcome.</p></div>
     </div>
   </section>
 
@@ -103,8 +109,9 @@
 <footer>
   <div class="wrap">
     <a href="privacy.html">Privacy Policy</a> &nbsp;·&nbsp;
+    <a href="https://github.com/maxafanasiev/timezen/issues">Issues</a> &nbsp;·&nbsp;
     <a href="mailto:afanasievmaksym2@gmail.com">Support</a> &nbsp;·&nbsp;
-    <a href="mailto:afanasievmaksym2@gmail.com">Support</a>
+    <a href="https://github.com/maxafanasiev/timezen">GitHub</a>
     <p class="disclaimer">Timezen is an independent, unofficial client for SolidTime servers.
       “SolidTime” is a trademark of its respective owners; Timezen is not affiliated with or endorsed by SolidTime.</p>
     <p style="margin-top:10px">© 2026 Timezen</p>
